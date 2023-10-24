@@ -15,7 +15,24 @@ class MyApp extends StatelessWidget {
 }
 
 class WelcomeScreen extends StatelessWidget {
-  const WelcomeScreen({super.key});
+  const WelcomeScreen({Key? key}) : super(key: key);
+
+  Future<void> _navigateToItineraryScreen(BuildContext context) async {
+    await Future.delayed(Duration(milliseconds: 500));
+
+    Navigator.push(
+      context,
+      PageRouteBuilder(
+        pageBuilder: (context, animation, secondaryAnimation) {
+          return FadeTransition(
+            opacity: animation,
+            child: ItineraryScreen(),
+          );
+        },
+        transitionDuration: Duration(seconds: 1),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -39,11 +56,7 @@ class WelcomeScreen extends StatelessWidget {
                 SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => ItineraryScreen()),
-                    );
+                    _navigateToItineraryScreen(context);
                   },
                   child: const Text('Explore one-day itineraries in Sydney'),
                 ),

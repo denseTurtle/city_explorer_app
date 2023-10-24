@@ -11,7 +11,7 @@ class ItineraryScreen extends StatelessWidget {
       ),
       body: GridView.count(
         childAspectRatio: 0.5,
-        crossAxisCount: 2, 
+        crossAxisCount: 2,
         children: const <Widget>[
           CategoryTile(
               label: 'Adventure Enthusiasts',
@@ -62,7 +62,7 @@ class CategoryTile extends StatelessWidget {
                 child: Text(
                   label,
                   style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 15,
                     color: Colors.white,
                   ),
                 ),
