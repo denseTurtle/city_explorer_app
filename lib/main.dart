@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'itinerary_screen.dart'; // Import the ItineraryScreen class
+import 'itinerary_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -36,7 +36,7 @@ class WelcomeScreen extends StatelessWidget {
                   'Welcome to Sydney, Australia',
                   style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
-                const SizedBox(height: 20),
+                SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(

@@ -62,9 +62,25 @@ flutter:
   assets:
     - assets/images/sydney_image.png 
     - assets/images/culinary_image.png
+    - assets/images/culinary1_image.png
+    - assets/images/culinary2_image.png
+    - assets/images/culinary3_image.png
+    - assets/images/culinary4_image.png
     - assets/images/nightlife_image.png
+    - assets/images/nightlife1_image.png
+    - assets/images/nightlife2_image.png
+    - assets/images/nightlife3_image.png
+    - assets/images/nightlife4_image.png
     - assets/images/history_image.png
+    - assets/images/history1_image.png
+    - assets/images/history2_image.png
+    - assets/images/history3_image.png
+    - assets/images/history4_image.png
     - assets/images/adventure_image.png
+    - assets/images/adventure1_image.png
+    - assets/images/adventure2_image.png
+    - assets/images/adventure3_image.png
+    - assets/images/adventure4_image.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
